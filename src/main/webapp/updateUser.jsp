@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/layui.css">
  <script src="js/layui.js"></script>
   <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-<title>修改用户</title>
+<title>修改用户8</title>
 <script>
 layui.use('form', function(){
 	  var form = layui.form;
