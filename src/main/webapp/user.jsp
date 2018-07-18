@@ -44,9 +44,10 @@
 	}
 	
 	
-	function update(e){
-		console.log(e);
+	function updateUser(id){
+		layui.layer.msg(id);
 	}
+	
 	layui.use(['layer','table',"form"],function(){
 		//获取到table模块对象
 		var table=layui.table;
@@ -62,7 +63,8 @@
 				{field:'psw',title:'用户密码',width:250},
 				{field:"myControler",title:"操作",width:250,templet:function(d){
 					return '<a href=javascript:deleteUser(\"'+d.id+'\")><img src="img/delete.ico"></a>'+
-					'&nbsp;&nbsp<a href=javascript:detailUser(\"'+d.id+'\")><img src="img/detailed.ico"></a>'
+					'&nbsp;&nbsp<a href=javascript:detailUser(\"'+d.id+'\")><img src="img/detailed.ico"></a>'+
+					'&nbsp;&nbsp<a href=javascript:updateUser(\"'+d.id+'\")><img src="img/update.ico"></a>'
 				}},
 			]]
 		});
